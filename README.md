@@ -1,108 +1,48 @@
--> Project Overview
+# Multiple Linear Regression – Startup Profit Prediction
 
-This project focuses on predicting startup profits using Multiple Linear Regression, a supervised machine learning algorithm used to model the relationship between multiple independent variables and a single dependent variable.
-
-Unlike simple regression models that rely on only one input feature, this project analyzes how multiple financial factors collectively influence a company’s profitability. The aim is to simulate a real-world business analytics scenario where decisions are driven by data.
-
-Through this implementation, the project demonstrates how machine learning can assist in understanding investment efficiency and optimizing business strategies.
+Predicting profit for 50 startups based on R&D spend, marketing, administration costs and location using Multiple Linear Regression.
 
 
--> Dataset Description
+## Dataset
 
-The dataset consists of financial information from 50 startups and includes the following features:
-
-R&D Spend – Investment in research and development
-
-Administration – Administrative operational expenses
-
-Marketing Spend – Marketing and promotional investments
-
-State – Location of the startup
-
-Profit – Target variable (output)
-
-This dataset allows us to examine how different types of expenditures and location factors impact overall profit.
+- **50_Startups.csv** — 50 records with features: R&D Spend, Administration, Marketing Spend, State, and Profit (target)
 
 
--> Key Concepts Covered
+## What I Did
 
-This project demonstrates important machine learning and data preprocessing concepts, including:
-
-Supervised Learning
-
-Multiple Linear Regression
-
-Handling Categorical Variables through Encoding
-
-Data Splitting (Training and Testing Sets)
-
-Feature Impact Analysis
-
-Predictive Modeling
-
-Business Data Interpretation
+- Encoded the categorical `State` column using label/one-hot encoding
+- Split data into training and test sets (80/20)
+- Trained a Multiple Linear Regression model using Scikit-learn
+- Predicted profits on the test set and compared against actual values
+- Analysed which features have the strongest impact on profit
 
 
--> Model Explanation
+## Key Finding
 
-Multiple Linear Regression works by fitting a hyperplane that best represents the relationship between several independent variables and the dependent variable.
-
-In this project:
-
-The model learns how R&D, Administration, Marketing Spend, and State contribute to profit.
-
-Categorical data (State) is converted into numerical form for model compatibility.
-
-The dataset is divided into training and testing sets to ensure fair evaluation.
-
-The trained model predicts profits based on unseen data.
-
-Results are analyzed to understand the influence of each variable.
-
-This provides valuable business insights such as:
-
-Which investment area has the strongest impact on profit?
-
-How effectively does R&D spending drive returns?
-
-Does geographical location significantly influence profitability?
+R&D Spend has the strongest positive correlation with profit — startups investing more in R&D consistently show higher returns regardless of location.
 
 
--> Technologies Used
+## Tech Stack
 
-Python
-
-NumPy
-
-Pandas
-
-Matplotlib
-
-Scikit-learn
-
-Jupyter Notebook
-
-These tools are industry-standard technologies in data science and machine learning workflows.
+Python, Pandas, NumPy, Matplotlib, Scikit-learn, Jupyter Notebook
 
 
--> Learning Outcomes
+## How to Run
 
-Through this project, I strengthened my understanding of:
-
-Building regression models with multiple features
-
-Preprocessing real-world structured datasets
-
-Interpreting regression coefficients
-
-Evaluating predictive performance
-
-Applying machine learning to business analytics
-
-This project represents a step forward from basic regression models and reflects a deeper understanding of applied machine learning concepts.
+```bash
+git clone https://github.com/Ayush28042005/Multiple-linear-regression.git
+cd Multiple-linear-regression
+pip install pandas numpy matplotlib scikit-learn
+jupyter notebook multiple-linear-regression.ipynb
+```
 
 
--> Conclusion
+## Author
 
-This project demonstrates how machine learning can transform raw financial data into actionable insights. By modeling the relationship between investments and profit, the system provides a foundation for data-driven decision-making in business environments.
+Ayush Saini 
+
+
+
+
+
 
